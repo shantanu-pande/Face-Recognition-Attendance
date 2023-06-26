@@ -4,7 +4,7 @@ from PIL import ImageTk, Image
 
 window = tk.Tk()
 window.title("OpenCV Application")
-window.geometry("300x200")
+window.geometry("500x600")
 def update_camera():
     ret, frame = cap.read()
     frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
