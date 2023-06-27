@@ -12,7 +12,7 @@ class CameraApp:
         self.label = tk.Label(window)
         self.label.pack(padx=10, pady=10)
 
-         # Create a label to display additional information
+        # Create a label to display additional information
         self.info_label = tk.Label(window, text="Name: ", font=("Arial", 12, "bold"))
         self.info_label.pack(pady=5)
         self.info_label = tk.Label(window, text="Registration number: ")
@@ -26,16 +26,17 @@ class CameraApp:
         self.buttons_frame = tk.Frame(window)
         self.buttons_frame.pack(padx=10, pady=10)
 
-        # Create the "Start" button
-        self.start_button = tk.Button(self.buttons_frame, text="Check in", command=self.start_camera)
+        # Create the "Check In" button
+        self.start_button = tk.Button(self.buttons_frame, text="Check In", command=self.start_camera)
         self.start_button.pack(side=tk.LEFT, padx=30)
 
-        # Create the "Stop" button
-        self.stop_button = tk.Button(self.buttons_frame, text="Check out", command=self.stop_camera)
+        # Create the "Check Out" button
+        self.stop_button = tk.Button(self.buttons_frame, text="Check Out", command=self.stop_camera)
         self.stop_button.pack(side=tk.LEFT, padx=30)
 
         self.is_camera_running = False
         self.video_capture = None
+        self.start_camera()
 
     def start_camera(self):
         if not self.is_camera_running:
