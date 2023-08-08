@@ -6,6 +6,3 @@ trainer
 faces
 face_encodings
 dlib*
-
-- faces
-- face_encodings
