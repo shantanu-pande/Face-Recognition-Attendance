@@ -273,6 +273,9 @@ if __name__=="__main__":
     window = tk.Tk()
     # Create the CameraApp instance
     app = CameraApp(window)
+
+    # Uncomment following line to generate encodings 
     # app.train()
-    # Run the Tkinter event loop
+    
+    # Run the Tkinter event loop    
     window.mainloop()
