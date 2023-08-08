@@ -85,5 +85,5 @@ Contributions are always welcome!
 
 ## Authors
 
-- [@Shantanu Pande](https://www.github.com/iam7t9)
-- [@Astha Dhapodkar](https://github.com/AsthaDhapodkar)
+- [@iam7t9](https://www.github.com/iam7t9)
+- [@AsthaDhapodkar](https://github.com/AsthaDhapodkar)
