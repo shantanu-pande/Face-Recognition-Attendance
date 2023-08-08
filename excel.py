@@ -1,7 +1,7 @@
 from openpyxl import load_workbook
 from datetime import datetime, date
 
-workbook = load_workbook("sheet1.xlsx")
+workbook = load_workbook("database.xlsx")
 
 def read(sheet_name, row_index):
     row_index += 1
@@ -70,12 +70,23 @@ def read(sheet_name, row_index):
 # workbook.save("sheet1.xlsx")
 
 
-def AddEntry(id, entry):
+def addEntry(id, entry):
     sheetname = date.today().strftime('%d-%m-%Y')
     current_time = datetime.now().strftime('%H:%M:%S')
 
     sheet = workbook[sheetname]
     sheet.cell(row=id+1,column=read("sample", 0).index(entry)+1).value = str(current_time)
-    workbook.save("sheet1.xlsx")
+    workbook.save("database.xlsx")
 
-AddEntry(1, "Check Out")
+
+def addSheet():
+    sheetname = date.today().strftime('%d-%m-%Y')
+    workbook.copy_worksheet(workbook["sample"])
+    new_sheet_name = workbook.sheetnames[-1]  # Get the last sheet name (newly created sheet)
+    sheet = workbook[new_sheet_name]
+    sheet.title = sheetname
+    workbook.save("database.xlsx")
+
+
+# addEntry(1, "Check Out")
+addSheet()

@@ -59,9 +59,9 @@ class CameraApp:
         if self.is_camera_running:
             # Read a frame from the video capture
             ret, frame = self.video_capture.read()
-
             if ret:
                 # Convert the OpenCV frame to PIL format
+                gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
                 image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
                 image = Image.fromarray(image)
 
