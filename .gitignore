@@ -3,3 +3,9 @@ env
 OLD
 trainer
 .vscode
+faces
+face_encodings
+dlib*
+
+- faces
+- face_encodings

@@ -1,0 +1,12 @@
+{
+    "id": [
+        "1",
+        "2",
+        "3"
+    ],
+    "encoding_file_path": [
+        "S:\\Projects\\Face Recognition Attendance System\\face_encodings\\1.npy",
+        "S:\\Projects\\Face Recognition Attendance System\\face_encodings\\2.npy",
+        "S:\\Projects\\Face Recognition Attendance System\\face_encodings\\3.npy"
+    ]
+}
