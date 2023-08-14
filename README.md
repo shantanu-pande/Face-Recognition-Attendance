@@ -87,4 +87,4 @@ Contributions are always welcome!
 
 - [@Shantanu Pande](https://www.github.com/iam7t9)
 - [@Astha Dhapodkar](https://github.com/AsthaDhapodkar)
-- [@Sakshi Kide]()
+- [@Sakshi Kide](https://github.com/Sa30K)
